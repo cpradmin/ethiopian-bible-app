@@ -2,7 +2,7 @@
   {
     "abbrev": "1Chr",
     "name": "1 Chronicles",
-    "geez_name": "",
+    "geez_name": "ቀዳማይ፡ዜና፡መዋዕል",
     "section": "Historical",
     "chapters": 29
   },
@@ -32,8 +32,8 @@
   {
     "abbrev": "1Meq",
     "name": "1 Meqabyan",
-    "geez_name": "",
-    "section": "Unique to Ethiopia",
+    "geez_name": "መቃብያን፡ቀዳማዊ",
+    "section": "Deuterocanonical",
     "chapters": 36,
     "source_id": "LIT1819Maccab",
     "short": "1 Meqabyan"
@@ -48,7 +48,7 @@
   {
     "abbrev": "1Sam",
     "name": "1 Samuel",
-    "geez_name": "",
+    "geez_name": "ቀዳማይ፡ሳሙኤል",
     "section": "Historical",
     "chapters": 31
   },
@@ -69,7 +69,7 @@
   {
     "abbrev": "2Chr",
     "name": "2 Chronicles",
-    "geez_name": "",
+    "geez_name": "ካልዕ፡ዜና፡መዋዕል",
     "section": "Historical",
     "chapters": 36
   },
@@ -90,8 +90,8 @@
   {
     "abbrev": "2Meq",
     "name": "2 Meqabyan",
-    "geez_name": "",
-    "section": "Unique to Ethiopia",
+    "geez_name": "መቃብያን፡ካልዕ",
+    "section": "Deuterocanonical",
     "chapters": 21
   },
   {
@@ -104,7 +104,7 @@
   {
     "abbrev": "2Sam",
     "name": "2 Samuel",
-    "geez_name": "",
+    "geez_name": "ካልዕ፡ሳሙኤል",
     "section": "Historical",
     "chapters": 24
   },
@@ -157,14 +157,14 @@
   {
     "abbrev": "Amos",
     "name": "Amos",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ዓሞጽ",
     "section": "Prophets",
     "chapters": 9
   },
   {
     "abbrev": "ApEz",
     "name": "Apocalypse of Ezra",
-    "geez_name": "",
+    "geez_name": "ራእየ፡ዕዝራ",
     "section": "Unique to Ethiopia",
     "chapters": 10,
     "source_id": "LIT1376Apocal",
@@ -173,8 +173,8 @@
   {
     "abbrev": "Clem",
     "name": "Clement",
-    "geez_name": "",
-    "section": "New Testament (Ethiopian)",
+    "geez_name": "ቀሌምንጦስ",
+    "section": "Unique to Ethiopia",
     "chapters": 67,
     "source_id": "LIT2680ClemPeter",
     "short": "Clement"
@@ -189,14 +189,14 @@
   {
     "abbrev": "Dan",
     "name": "Daniel",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ዳንኤል",
     "section": "Prophets",
     "chapters": 14
   },
   {
     "abbrev": "Deut",
     "name": "Deuteronomy",
-    "geez_name": "",
+    "geez_name": "ኦሪት፡ዘዳግም",
     "section": "Torah (Orit)",
     "chapters": 34,
     "source_id": "LIT2637Deuteronomy",
@@ -221,14 +221,14 @@
   {
     "abbrev": "Esth",
     "name": "Esther",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡አስቴር",
     "section": "Historical",
     "chapters": 13
   },
   {
     "abbrev": "Exod",
     "name": "Exodus",
-    "geez_name": "",
+    "geez_name": "ኦሪት፡ዘፀአት",
     "section": "Torah (Orit)",
     "chapters": 40,
     "source_id": "LIT1367Exodus",
@@ -237,14 +237,14 @@
   {
     "abbrev": "Ezek",
     "name": "Ezekiel",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሕዝቅኤል",
     "section": "Prophets",
     "chapters": 48
   },
   {
     "abbrev": "Ezra",
     "name": "Ezra",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡ዕዝራ",
     "section": "Historical",
     "chapters": 13,
     "source_id": "LIT1374Bookof",
@@ -269,14 +269,14 @@
   {
     "abbrev": "Hab",
     "name": "Habakkuk",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ዕንባቆም",
     "section": "Prophets",
     "chapters": 3
   },
   {
     "abbrev": "Hag",
     "name": "Haggai",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሐጌ",
     "section": "Prophets",
     "chapters": 2
   },
@@ -290,7 +290,7 @@
   {
     "abbrev": "Hos",
     "name": "Hosea",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሆሴዕ",
     "section": "Prophets",
     "chapters": 14
   },
@@ -322,7 +322,7 @@
   {
     "abbrev": "Jer",
     "name": "Jeremiah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ኤርምያስ",
     "section": "Prophets",
     "chapters": 52
   },
@@ -338,7 +338,7 @@
   {
     "abbrev": "Joel",
     "name": "Joel",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ኢዮኤል",
     "section": "Prophets",
     "chapters": 3,
     "source_id": "LIT1689Joel",
@@ -354,7 +354,7 @@
   {
     "abbrev": "Jonah",
     "name": "Jonah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ዮናስ",
     "section": "Prophets",
     "chapters": 4,
     "source_id": "LIT1694Jonah",
@@ -363,7 +363,7 @@
   {
     "abbrev": "Josh",
     "name": "Joshua",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡ኢያሱ",
     "section": "Historical",
     "chapters": 24,
     "source_id": "LIT1696Joshua",
@@ -388,7 +388,7 @@
   {
     "abbrev": "Judg",
     "name": "Judges",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡መሣፍንት",
     "section": "Historical",
     "chapters": 21,
     "source_id": "LIT1700Judges",
@@ -433,7 +433,7 @@
   {
     "abbrev": "Lev",
     "name": "Leviticus",
-    "geez_name": "",
+    "geez_name": "ኦሪት፡ዘሌዋውያን",
     "section": "Torah (Orit)",
     "chapters": 27,
     "source_id": "LIT1793Leviti",
@@ -449,7 +449,7 @@
   {
     "abbrev": "Mal",
     "name": "Malachi",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሚልክያ",
     "section": "Prophets",
     "chapters": 4
   },
@@ -470,7 +470,7 @@
   {
     "abbrev": "Mic",
     "name": "Micah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሚክያስ",
     "section": "Prophets",
     "chapters": 7
   },
@@ -486,21 +486,21 @@
   {
     "abbrev": "Nah",
     "name": "Nahum",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ናሆም",
     "section": "Prophets",
     "chapters": 3
   },
   {
     "abbrev": "Neh",
     "name": "Nehemiah",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡ነህምያ",
     "section": "Historical",
     "chapters": 4
   },
   {
     "abbrev": "Num",
     "name": "Numbers",
-    "geez_name": "",
+    "geez_name": "ኦሪት፡ዘኍልቍ",
     "section": "Torah (Orit)",
     "chapters": 36,
     "source_id": "LIT2075Number",
@@ -509,7 +509,7 @@
   {
     "abbrev": "Obad",
     "name": "Obadiah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡አብድዩ",
     "section": "Prophets",
     "chapters": 1
   },
@@ -539,7 +539,7 @@
   {
     "abbrev": "Ps",
     "name": "Psalms",
-    "geez_name": "",
+    "geez_name": "መዝሙረ፡ዳዊት",
     "section": "Wisdom",
     "chapters": 151
   },
@@ -560,7 +560,7 @@
   {
     "abbrev": "Ruth",
     "name": "Ruth",
-    "geez_name": "",
+    "geez_name": "መጽሐፈ፡ሩት",
     "section": "Historical",
     "chapters": 4,
     "source_id": "LIT2229RuthBo",
@@ -569,7 +569,7 @@
   {
     "abbrev": "Sinod",
     "name": "Sinodos",
-    "geez_name": "",
+    "geez_name": "ስንዶስ",
     "section": "Unique to Ethiopia",
     "chapters": 36,
     "source_id": "LIT1047Aksumi",
@@ -648,14 +648,14 @@
   {
     "abbrev": "Zech",
     "name": "Zechariah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ዘካርያስ",
     "section": "Prophets",
     "chapters": 14
   },
   {
     "abbrev": "Zeph",
     "name": "Zephaniah",
-    "geez_name": "",
+    "geez_name": "ትንቢተ፡ሶፎንያስ",
     "section": "Prophets",
     "chapters": 3
   }
