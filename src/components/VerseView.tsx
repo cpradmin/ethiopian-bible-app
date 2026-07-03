@@ -90,7 +90,12 @@ export const VerseView = memo(function VerseView({
           )}
 
           {readingMode === 'read' && (
-            <ReadModeBlock verse={verse} showAiTranslation={showAiTranslation} fontSize={fontSize} />
+            <ReadModeBlock
+              verse={verse}
+              showTransliteration={showTransliteration}
+              showAiTranslation={showAiTranslation}
+              fontSize={fontSize}
+            />
           )}
 
           {readingMode === 'compare' && (
@@ -197,27 +202,55 @@ function TranslationBlock({
   )
 }
 
-function ReadModeBlock({ verse, showAiTranslation, fontSize }: { verse: Verse; showAiTranslation: boolean; fontSize: number }) {
-  // Clean reading: just the primary English text
+function ReadModeBlock({
+  verse,
+  showTransliteration,
+  showAiTranslation,
+  fontSize,
+}: {
+  verse: Verse
+  showTransliteration: boolean
+  showAiTranslation: boolean
+  fontSize: number
+}) {
+  // Clean reading: the Ge'ez scripture itself, with optional transliteration and English helps.
   const scholarlyText = verse.translations?.lxx || verse.translations?.kjv || verse.translation
   const aiEntry = verse.translations?.ai
-
-  // Use AI as fallback when no scholarly translation exists
-  if (!scholarlyText && showAiTranslation && aiEntry) {
-    return (
-      <div className="flex items-start gap-2">
-        <p className="verse-text text-text" style={{ fontSize: fontSize * 0.9 }}>
-          {aiEntry.text}
-        </p>
-        <ConfidencePill confidence={aiEntry.confidence ?? 0} />
-      </div>
-    )
-  }
+  const translit = verse.words?.map(w => w.t).join('').replace(/\s+/g, ' ').trim()
 
   return (
-    <p className="verse-text text-text" style={{ fontSize: fontSize * 0.9 }}>
-      {scholarlyText}
-    </p>
+    <div className="space-y-1.5">
+      {/* The Ge'ez text — always shown; this is the scripture */}
+      {verse.geez && (
+        <p className="font-geez text-text leading-loose" lang="gez" style={{ fontSize }}>
+          {verse.geez}
+        </p>
+      )}
+
+      {/* Transliteration line (optional) */}
+      {showTransliteration && translit && (
+        <p className="text-text-muted italic leading-relaxed" style={{ fontSize: fontSize * 0.78 }}>
+          {translit}
+        </p>
+      )}
+
+      {/* English, when a published translation exists */}
+      {scholarlyText && (
+        <p className="verse-text text-text" style={{ fontSize: fontSize * 0.85 }}>
+          {scholarlyText}
+        </p>
+      )}
+
+      {/* AI draft only as a fallback when no published English exists */}
+      {!scholarlyText && showAiTranslation && aiEntry && (
+        <div className="flex items-start gap-2">
+          <p className="verse-text text-text" style={{ fontSize: fontSize * 0.85 }}>
+            {aiEntry.text}
+          </p>
+          <ConfidencePill confidence={aiEntry.confidence ?? 0} />
+        </div>
+      )}
+    </div>
   )
 }
 

@@ -15,7 +15,7 @@ async function detectTranslationStatus(abbrev: string): Promise<TranslationStatu
       if (v.translations?.lxx || v.translations?.kjv) return 'dual'
       if (v.translation) return 'single'
     }
-  } catch {}
+  } catch { /* network/parse error — treat as Ge'ez-only */ }
   return 'geez'
 }
 

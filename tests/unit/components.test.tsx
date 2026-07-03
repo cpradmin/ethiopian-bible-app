@@ -111,8 +111,8 @@ describe('VerseView', () => {
         onToggleBookmark={noop}
       />,
     )
-    expect(screen.getByText('LXX (Brenton)')).toBeInTheDocument()
-    expect(screen.getByText('KJV')).toBeInTheDocument()
+    expect(screen.getByText('Septuagint')).toBeInTheDocument()
+    expect(screen.getByText('King James')).toBeInTheDocument()
     expect(screen.getByText('And Adam lived two hundred and thirty years...')).toBeInTheDocument()
     expect(screen.getByText('And Adam lived an hundred and thirty years...')).toBeInTheDocument()
   })
@@ -135,7 +135,7 @@ describe('VerseView', () => {
     expect(screen.queryByText('KJV')).not.toBeInTheDocument()
   })
 
-  it('in read mode shows only text, no word cards', () => {
+  it('in read mode shows the Ge\'ez scripture plus English, no word cards', () => {
     const settings: ReaderSettings = { ...DEFAULT_SETTINGS, readingMode: 'read' }
     renderWithRouter(
       <VerseView
@@ -147,12 +147,14 @@ describe('VerseView', () => {
         onToggleBookmark={noop}
       />,
     )
-    // Read mode should show primary text (lxx preferred)
+    // Read mode must always show the Ge'ez text itself (the scripture)
+    expect(screen.getByText('\u12C8\u1210\u12ED\u12C8 \u1361 \u12A0\u12F3\u121D')).toBeInTheDocument()
+    // ...and the primary English (lxx preferred) when present
     expect(screen.getByText('And Adam lived two hundred and thirty years...')).toBeInTheDocument()
-    // Should NOT show word cards (no transliteration visible as cards)
-    expect(screen.queryByText('w\u00E4h\u00E4y\u00E4w\u00E4')).not.toBeInTheDocument()
-    // No LXX/KJV labels in read mode
-    expect(screen.queryByText('LXX (Brenton)')).not.toBeInTheDocument()
+    // Should NOT show interactive word cards (that's Study mode)
+    expect(screen.queryByText('\u00E4dam\u00E4')).not.toBeInTheDocument()
+    // No LXX/KJV source labels in read mode
+    expect(screen.queryByText('Septuagint')).not.toBeInTheDocument()
   })
 
   it('in compare mode shows side-by-side layout', () => {

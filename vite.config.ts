@@ -11,6 +11,9 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     setupFiles: './tests/setup.ts',
-    pool: 'vmThreads',
+    server: {
+      // react-router ships mixed ESM/CJS; inline it so vitest transforms it
+      deps: { inline: ['react-router', 'react-router-dom'] },
+    },
   },
 })
