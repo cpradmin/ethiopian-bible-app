@@ -2,6 +2,8 @@
 
 **The first free, open-source, interlinear Ethiopian Bible reader with dual English translations from the Septuagint and Masoretic traditions.**
 
+**📖 Live:** [cpradmin.github.io/ethiopian-bible-app](https://cpradmin.github.io/ethiopian-bible-app/)
+
 The Ethiopian Orthodox Tewahedo Church preserves the oldest and most complete biblical canon in Christianity -- 81 books, including texts that survive nowhere else on earth. This app presents them in the original Ge'ez script with word-by-word transliteration and side-by-side English translations from two ancient traditions.
 
 ## What Makes This Different
@@ -21,8 +23,8 @@ Same book. Same verse. Different number. The text speaks for itself.
 
 ## Features
 
-- **36 books** in Ge'ez with transliteration, **20 with dual English translations**
-- **Three reading modes**: Study (word cards + translations), Read (clean text), Compare (side-by-side)
+- **All 84 books / 1,819 chapters** in Ge'ez with **100% word-by-word transliteration**, plus **20 books (502 chapters) with dual English translations**
+- **Three reading modes**: Study (word cards + translations, default), Read (flowing Ge'ez with transliteration and English), Compare (side-by-side)
 - **Scholarly comparison page** with 12 documented textual variants, every claim cited to published sources
 - **URL routing** -- every verse is shareable (`/read/Gen/5/3`)
 - **Bookmarks and annotations** saved in your browser
@@ -54,12 +56,11 @@ Full bibliography with 34 entries available at `/compare`.
 
 ## Tech Stack
 
-- React 18 + TypeScript + Vite
+- React 19 + TypeScript + Vite
 - TailwindCSS v4
 - React Router (URL-based navigation)
 - Vitest (39 unit tests)
-- Docker + Caddy (production deployment)
-- GitHub Actions CI
+- GitHub Actions CI + deploy to GitHub Pages (Docker + Caddy also supported)
 
 ## Getting Started
 
@@ -92,7 +93,7 @@ src/
   pages/         # Route pages (Reader, Compare, Welcome, Bookmarks)
   types/         # TypeScript type definitions
 public/
-  data/          # Chapter JSON files (1,076 chapters across 36 books)
+  data/          # Chapter JSON files (1,819 chapters across 84 books)
 tests/           # Unit tests
 ```
 
