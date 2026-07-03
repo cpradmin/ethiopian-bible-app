@@ -9,6 +9,7 @@ describe('DEFAULT_SETTINGS', () => {
       showLxx: true,
       showKjv: true,
       showGeezSource: true,
+      showAiTranslation: true,
       fontSize: 20,
     })
   })

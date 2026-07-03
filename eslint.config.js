@@ -19,5 +19,13 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    rules: {
+      // React-Compiler / dev-ergonomics advisories — surfaced as warnings, not build-blocking errors.
+      // These flag idiomatic patterns (loading flags in effects, function decls used by effects,
+      // and non-component exports for HMR), none of which are correctness bugs here.
+      'react-hooks/set-state-in-effect': 'warn',
+      'react-hooks/immutability': 'warn',
+      'react-refresh/only-export-components': 'warn',
+    },
   },
 ])

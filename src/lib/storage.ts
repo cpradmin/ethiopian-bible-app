@@ -13,7 +13,7 @@ export function loadSettings(): ReaderSettings {
       const parsed = JSON.parse(raw)
       return { ...DEFAULT_SETTINGS, ...parsed }
     }
-  } catch {}
+  } catch { /* corrupt or unavailable localStorage — fall through */ }
   return { ...DEFAULT_SETTINGS }
 }
 
@@ -117,7 +117,7 @@ export function addToHistory(book: string, chapter: number): void {
     filtered.unshift({ book, chapter, timestamp: new Date().toISOString() })
     // Keep last 50
     localStorage.setItem(HISTORY_KEY, JSON.stringify(filtered.slice(0, 50)))
-  } catch {}
+  } catch { /* corrupt or unavailable localStorage — fall through */ }
 }
 
 export function loadHistory(): HistoryEntry[] {
